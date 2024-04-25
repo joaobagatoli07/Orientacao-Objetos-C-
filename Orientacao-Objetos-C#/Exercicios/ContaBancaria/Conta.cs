@@ -1,14 +1,14 @@
 ﻿class Conta
 {
-    public int numeroIndicador;
-    public string titular;
-    public double saldo;
-    public int senha;
+    public int NumeroIndicador { get; set; }
+    public string Titular { get; set; }
+    public double Saldo { get; set; }
+    public int Senha { get; set; }
 
     public void ExibirInformacoes()
     {
-        Console.WriteLine($"Titular: {titular}");
-        Console.WriteLine($"Saldo: {saldo}");
+        Console.WriteLine($"Titular: {Titular}");
+        Console.WriteLine($"Saldo: {Saldo}");
     }
 }
 

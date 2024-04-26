@@ -1,18 +1,15 @@
-﻿Musica musica1 = new Musica();
-musica1.Nome = "So Long, London";
-musica1.Artista = "Taylor Swift";
-musica1.Duracao = 273;
-musica1.Disponivel = true;
-Console.WriteLine(musica1.Disponivel);
-Console.WriteLine(musica1.Titulo);
+﻿Album albumTaylor = new Album();
+albumTaylor.Nome = "The Tortured Poets Department";
 
-musica1.ExibirFichaTecnica();
+Musica musica1 = new Musica();
+musica1.Nome = "So Long, London";
+musica1.Duracao = 213;
 
 Musica musica2 = new Musica();
-musica2.Nome = "Birds";
-musica2.Artista = "Imagine Dragons";
-musica1.Duracao = 367;
-musica1.Disponivel = false;
-Console.WriteLine(musica2.Disponivel);
+musica2.Nome = "Who's Afraid Of Little Old Me?";
+musica2.Duracao = 354;
 
-musica2.ExibirFichaTecnica();
+albumTaylor.AdicionarMusica(musica1);
+albumTaylor.AdicionarMusica(musica2);
+
+albumTaylor.ExibirMusicas();

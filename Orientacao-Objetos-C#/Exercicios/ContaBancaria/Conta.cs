@@ -1,14 +1,18 @@
 ﻿class Conta
 {
-    public int NumeroIndicador { get; set; }
-    public string Titular { get; set; }
+    public int Numero { get; set; }
+    public string Agencia { get; set; }
+    public Titular Titular { get; set; }
     public double Saldo { get; set; }
-    public int Senha { get; set; }
+    public double Limite { get; set; }
 
     public void ExibirInformacoes()
     {
-        Console.WriteLine($"Titular: {Titular}");
+        Console.WriteLine("Informações da Conta");
+        Console.WriteLine($"Numero: {Numero}");
+        Console.WriteLine($"Titular: {Titular.Nome} - {Titular.CPF}");
         Console.WriteLine($"Saldo: {Saldo}");
+        Console.WriteLine($"Limite: {Limite}");
     }
 }
 

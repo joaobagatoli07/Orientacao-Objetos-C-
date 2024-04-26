@@ -1,11 +1,11 @@
 ﻿class Produto
 {
-    private float preco;
+    private double preco;
     private int estoque;
 
     public string Nome { get; set; }
     public string Marca { get; set; }
-    public float Preco 
+    public double Preco 
     {
         get => preco; 
         set

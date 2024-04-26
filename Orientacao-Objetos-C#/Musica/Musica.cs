@@ -2,6 +2,7 @@
 {
     public string Nome { get; set; }
     public string Artista { get; set; }
+    public Genero Genero { get; set; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
     public string Titulo => $"{Nome} - {Artista}";

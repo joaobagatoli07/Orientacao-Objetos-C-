@@ -1,15 +1,25 @@
-﻿Album albumTaylor = new Album();
-albumTaylor.Nome = "The Tortured Poets Department";
+﻿Banda bandaTaylor = new Banda("The Eras Tour");
 
-Musica musica1 = new Musica();
-musica1.Nome = "So Long, London";
-musica1.Duracao = 213;
+Album albumTaylor = new Album("The Tortured Poets Department");
 
-Musica musica2 = new Musica();
-musica2.Nome = "Who's Afraid Of Little Old Me?";
-musica2.Duracao = 354;
+Musica musica1 = new Musica(bandaTaylor, "So Long, London")
+{
+    Duracao = 213,
+    Disponivel = true,
+};
+
+
+Musica musica2 = new Musica(bandaTaylor, "Who's Afraid Of Little Old Me?")
+{
+    Duracao = 354,
+    Disponivel = false,
+};
 
 albumTaylor.AdicionarMusica(musica1);
 albumTaylor.AdicionarMusica(musica2);
+bandaTaylor.AdicionarAlbum(albumTaylor);
 
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
 albumTaylor.ExibirMusicas();
+bandaTaylor.ExibirDiscografia();

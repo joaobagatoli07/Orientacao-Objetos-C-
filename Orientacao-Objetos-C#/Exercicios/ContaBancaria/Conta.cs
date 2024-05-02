@@ -1,18 +1,19 @@
 ﻿class Conta
 {
     public int Numero { get; set; }
-    public string Agencia { get; set; }
+    public int Agencia { get; set; }
     public Titular Titular { get; set; }
     public double Saldo { get; set; }
     public double Limite { get; set; }
+    public string Resumo => $"Conta nº {Numero} - Agência {Agencia} / Titular: {Titular.Nome} - {Titular.Cpf} / Saldo: {Saldo} e Limite: {Limite}";
 
-    public void ExibirInformacoes()
+    public Conta(int numero, int agencia, Titular titular, double saldo, double limite)
     {
-        Console.WriteLine("Informações da Conta");
-        Console.WriteLine($"Numero: {Numero}");
-        Console.WriteLine($"Titular: {Titular.Nome} - {Titular.CPF}");
-        Console.WriteLine($"Saldo: {Saldo}");
-        Console.WriteLine($"Limite: {Limite}");
+        Numero = numero;
+        Agencia = agencia;
+        Titular = titular;
+        Saldo = saldo;
+        Limite = limite;
     }
 }
 

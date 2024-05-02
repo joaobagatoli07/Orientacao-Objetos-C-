@@ -1,14 +1,7 @@
-﻿//Titular pessoa = new Titular();
-//pessoa.Nome = "João";
-//pessoa.CPF = "134-195-276.81";
+﻿//Titular joao = new Titular("João", "134-195-276.81", "Rua X");
+//Conta contaJoao = new Conta(123, 30, joao, 350, 2000);
 
-//Conta conta = new Conta();
-//conta.Numero = 123;
-//conta.Agencia = "X";
-//conta.Titular = pessoa;
-//conta.Saldo = 350;
-//conta.Limite = 2000;
-//conta.ExibirInformacoes();
+//Console.WriteLine(contaJoao.Resumo);
 
 
 
